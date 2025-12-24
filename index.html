@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>経歴紹介ページ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--リセットCSS-->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- 全体ラッパー -->
+	<main class="container">
+
+		<!-- ヘッダー プロフィール -->
+		<header class="page-header">
+			<section class="section">
+				<div class="hero-title">ＰＯＲＴＦＯＬＩＯ</div>
+				<!--		<div class="profile-avatar"><img class="avatar" src="images/cover-contact-l.webp" alt="アイコン写真"></div>-->
+				<div class="profile-sentence">
+					<p class="hurigana">こみなみ　 こうさく</p>
+					<h1>古南 孝朔</h1>
+					<p class="role">SE/システムエンジニア</p>
+					<p class="profile-sentence">大学在学時にプログラミングへ興味を持ち独学を開始、<br>
+						オンライン学習サービスでHTML,CSS,JavaScript,その他バックエンド言語について半年～1年ほど学習。<br>
+						2025年11月M＆Cシステム株式会社へシステムエンジニアとして入社、3ヵ月のJava研修を受講。</p>
+				</div>
+			</section>
+		</header>
+
+
+		<!-- スキルセクション -->
+		<section class="section">
+			<h2 class="section-title">スキル</h2>
+
+			<!-- バッジ一覧 -->
+			<div class="skill-list">
+				<span class="skill-badge">HTML</span>
+				<span class="skill-badge">CSS</span>
+				<span class="skill-badge">JavaScript</span>
+				<span class="skill-badge">Java</span>
+				<span class="skill-badge">Spring</span>
+				<span class="skill-badge">Oracle</span>
+				<span class="skill-badge">SQL</span>
+			</div>
+		</section>
+		<!-- 経歴セクション -->
+		<section class="section">
+			<h2 class="section-title">経歴</h2>
+			<!-- カードレイアウト -->
+			<div class="card-grid">
+
+				<article class="card">
+					<h3>2025/12/18 - 現在</h3>
+					<p>
+						研修後半、HTML, CSS, JavaScript, Java, Springを学習。<br>
+						個人演習では社員管理アプリなど実践的な開発を経験。
+					</p>
+				</article>
+
+				<article class="card">
+					<h3>2025/11 - 2025/12/17</h3>
+					<p>
+						M＆Cシステム株式会社に入社、研修の受講を開始。<br>
+						Java, Oracle, SQLについて学習、主体的に学習へ取り組みチーム開発演習では進行役を務める。
+					</p>
+				</article>
+
+				<article class="card">
+					<h3>入社以前 - 入社(2025/11)</h3>
+					<p>
+						オンライン学習サービスである、Progate, Udemyを活用しプログラミングについて独学。<br>
+						HTML, CSS, JavaScript, Node.jsを重点的に学ぶ。<br>
+						Node.jsのフレームワークであるexpressに触れ、<br>http通信, JSON, RESTAPI, ルーティング設計などWEB開発の前提知識を得る。
+					</p>
+				</article>
+			</div>
+		</section>
+
+
+		<!-- 成果物セクション -->
+		<section class="section">
+			<h2 class="section-title">成果物</h2>
+
+			<div class="card-grid">
+
+				<article class="card" id="card1">
+					<h3>ポートフォリオサイト</h3>
+					<p>
+						HTML・CSSのみを用いて、Tailwind CSS風のデザインを実装しました。<br>
+						コンポーネントの共通化や余白・配色を意識し、
+						保守性と視認性を重視しました。
+					</p>
+					<a href="#work1" class="link">詳細を見る</a>
+				</article>
+
+				<article class="card" id="card2">
+					<h3>社員管理コンソールアプリケーション</h3>
+					<p>
+						JDBCを用いて、社員情報の登録・更新・削除・検索(CRUD)機能を実装しました。<br>
+						Java研修前半の開発演習として、GitHubを用いたチーム開発を経験し、実装だけでなく仕様の確認やテストケース入力など役割分担を意識して取り組みました。
+					</p>
+					<a href="#work2" class="link">詳細を見る</a>
+				</article>
+
+			</div>
+		</section>
+		
+<!--		所属企業セクション-->
+		<section class="section">
+			<h2 class="section-title">所属企業</h2>
+			<article class="card">
+				<h3><a class="link" href="http://mandcsys-jp.com/">M＆Cシステム株式会社</a></h3>
+				<p>大阪市西区西本町を拠点とし、業務系システム開発・ITエンジニア派遣・人材紹介・ＷＥＢサイト制作、情報セキュリティ研修など、お客様に最適なソリューションをご提供いたします。
+					<br><span class="quote">公式HPより引用</span>
+				</p>
+			</article>
+		</section>
+
+		<!--    コンタクトセクション-->
+		<section class="section">
+			<h2 class="section-title">CONTACT</h2>
+
+			<p class="contact-lead">
+				お問い合わせの際は以下のフォームをご利用ください。<br>
+				送信時に作成されるメールの宛先は、古南の社用Gmailとなります。
+			</p>
+
+
+			<form action="mailto:kominamishayou@gmail.com" method="get">
+				<p>件名</p>
+				<div class="card contact-card">
+					<input type="text" name="subject">
+				</div>
+
+				<p>内容</p>
+				<div class="card contact-card">
+					<textarea name="body"></textarea>
+				</div>
+
+				<button type="submit" class="contact-btn link">メールを作成</button>
+			</form>
+		</section>
+
+	</main>
+
+	<!-- モーダルカード（最初は非表示） -->
+	<div id="work1" class="card modal-card">
+		
+		<a href="#card1" class="link">閉じる</a>
+
+		<h2>ポートフォリオサイト</h2>
+		<div class="modal-card-explanation">
+			<ul>
+				<h3>仕様</h3>
+				<li>使用技術：HTML,CSS</li>
+				<li>目的：研修成果発表時での自己紹介用途</li>
+				<li><br>機能要件：<br>
+				・プロフィール(氏名・役割)の表示<br>
+				・経歴、スキル、成果物の一覧表示
+				</li>
+				<li><br>非機能要件：<br>
+				・視認性を重視したレイアウト<br>
+				・コンポーネントの再利用を前提としたCSS設計<br>
+				・継続的な利用を見据えた拡張性の確保
+				</li>
+			</ul>
+
+			<ul>
+				<h3>工夫した点</h3>
+				<li>CSSフレームワークであるTailWindをイメージし、可読性、再利用性を考慮した設計にしました。</li>
+				<li><br>バッジ(スキルセクションで採用)、カード(経歴、成果物、CONTACTセクションで採用)を共通コンポーネントとして定義し、
+				デザインの統一と保守性の向上に努めました。
+				</li>
+				<li><br>余白を十分に確保することで、情報量の密度過多を回避し、視認性を損なわない構成を意識しました。</li>
+			</ul>
+			
+			<ul>
+				<h3>改善点・挑戦したいこと</h3>
+				<li>・JavaScriptを用いて、モーダルウィンドウ表示時にフェードインアニメーションの追加をする
+				</li>
+				<li><br>・DBと連携して経歴やスキルをサーバーへ保存する</li>
+				<li><br>・バックエンド、編集画面、編集機能を実装してページから経歴やスキルを追加、削除、編集可能にする</li>
+				<li><br>・実際にTailWindを利用してデザインを実装する</li>
+			</ul>
+			
+			<ul>
+				<h3>開発を通して得られた学び</h3>
+				<li>開発を通して、私が得た学びは「オブジェクト指向で考える」です。
+				<li><br>ポートフォリオサイト制作にあたり、テンプレートやデザインテーマはなく、1から制作に取り掛かりました。</li>
+				<li><br>そこでまず「デザインの方向性を統一しよう」と考え、独学時代に少し触れたReactの知識から、「TailWind」を思いつき、今回のデザインテーマを「TailWind風」に決定しました。</li>
+				<li><br>バッジやカードなどのデザインを部品として定義し、各セクションでそれを再利用するという、TailWindの「コンポーネント管理」という考え方は、研修前半で学習したJavaの設計指向の一つである、「多態化」に通ずると感じ、設計や開発におけるオブジェクト指向の大切さを再認識しました。</li>
+				<li><br>今後、開発や設計を担当する際は、まず「オブジェクト指向を順守する」ことが、「再利用性や保守性、開発効率の向上につながる」という考え方が今回の開発を通して得た学びです。</li>
+			</ul>
+			
+			</div>
+		<div class="modal-card-link"><a class="link" href="#">成果物のリンク</a></div>
+		<div class="under-close"><a href="#card1" class="link">閉じる</a></div>
+		
+	</div>
+
+	<div id="work2" class="card modal-card">
+		
+		<a href="#card2" class="link">閉じる</a>
+	
+		<h2>社員管理コンソールアプリケーション</h2>
+		<div class="modal-card-explanation">
+			<ul>
+				<h3>仕様</h3>
+				<li>使用技術：Java・JDBC・Oracle・SQL</li>
+				<li>目的：<br>研修前半範囲の理解度確認<br>チーム(3人)での開発を経験<br></li>
+				<li><br>機能要件：<br>
+					・検索、登録、更新、削除(CRUD)機能<br>
+					・不正な値の入力チェック、例外処理
+				</li>
+				<li><br>非機能要件：<br>
+					・SQLインジェクション対策<br>
+					・テスト仕様書に基づくテスト<br>
+					・残存バグ0件
+				</li>
+			</ul>
+	
+			<ul>
+				<h3>工夫した点</h3>
+				<li>進行役を務め、進捗管理、情報共有、タイムキーパーなどを率先して行いました。</li>
+				<li><br>実装、テストケース入力、テスト実施役を予め決定し、工数の偏りをなくしました。</li>
+				<li><br>実装担当者の画面をチームで共有することで、質問や相談を促進し、作業の滞りを削減しました。</li>
+				<li><br>コードには処理の意図や流れを簡潔にまとめたコメントを記述し、可読性の向上へ務めました。</li>
+				<li><br>GitHubでのコンフリクトを避けるため、コミットやプッシュ、プルをする際のZoomでの声掛け、Slackでの連絡などを徹底しました。</li>
+			</ul>
+	
+			<ul>
+				<h3>改善点・挑戦したいこと</h3>
+				<li>・ログイン機能の実装
+				</li>
+				<li><br>・ユーザー権限管理による機能制限の実装</li>
+				<li><br>・サーバー、インフラの実装</li>
+				<li><br>・コミット、ロールバックによる詳細なトランザクション管理の実装</li>
+				<li><br>・編集ログの記録、表示機能の実装</li>
+			</ul>
+	
+			<ul>
+				<h3>開発を通して得られた学び</h3>
+				<li>開発を通して、私が得た学びは「情報共有の大切さ」です。</li>
+				<li><br>今回の開発において、配布された仕様書に沿ってチームで開発を進める、という指定がありました。</li>
+				<li><br>チームでの開発は初の経験でしたが、大きな滞りなく余裕もって開発、テスト、納品まで完了することができました。</li>
+				<li><br>そしてその理由は「知識や理解の水準に、個人差を発生させない」という方針を予め定めていたからだと考えています。</li>
+				<li><br>具体的には「仕様書の確認」「実装した処理の流れ」「テストケースに含めるべき入力」「発生した課題とその解決法」これらすべてを実装の担当者や質問者といった当事者のみでなく、チーム全体で共有することを意識しました。</li>
+				<li><br>結果として1日以上余裕を持った状態で成果物が完成し、チームとしても特定の個人ではなく、全体としての理解度が大きく向上しました。</li>
+				<li><br>今回の開発経験を通し、チーム開発において大切な能力である「情報共有の意識」をより強くできたことが、私が得た学びです。</li>
+				
+			</ul>
+	
+			</div>
+		<div class="modal-card-link"><a class="link" href="https://github.com/kominamishayou/console_app_teamB.git">成果物のGitHubリンク</a></div>
+		<div class="under-close"><a href="#card2" class="link under-close">閉じる</a></div>
+	</div>
+
+</body>
+
+</html>
